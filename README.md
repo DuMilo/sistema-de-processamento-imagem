@@ -19,7 +19,8 @@ pip install Flask requests Pillow
 
 * Na mesma pasta, adicione uma imagem e nomeie-a de "sample_image" (no código tá .jpg, se for outro formato: trocar)
 
-* Abra três terminais: 
+* Abra três terminais:
+  
 -> No Terminal 1 (Worker 1): Inicie a primeira instância do worker na porta 5001.
 
 ```
