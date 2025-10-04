@@ -9,7 +9,7 @@ import os
 # --- Configurações do Cliente ---
 SERVER_URL = "http://127.0.0.1:5000"
 IMAGE_PATH = "sample_image.jpg" # Aviso do Milo: muda o nome do arquivo pra esse aqui.
-FILTER_TO_APPLY = "GRAYSCALE" # Experimente trocar por 'BLUR' ou 'CONTOUR'
+FILTER_TO_APPLY = "BLUR" # Experimente trocar por 'BLUR' ou 'CONTOUR'
 
 def run_client():
     # Verifica se a imagem de exemplo existe antes de continuar.
