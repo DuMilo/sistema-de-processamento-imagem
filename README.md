@@ -1,6 +1,6 @@
 # Sistema Distribuído de Processamento de Imagens
 
-#### Um sistema onde o cliente envia imagens para um servidor central, que distribui o processamento dessas imagens para vários computadores (workers). Cada worker aplica filtros ou transformações nas imagens de forma paralela e devolve o resultado ao servidor. O cliente pode então baixar as imagens já processadas.
+#### Um sistema onde o cliente envia imagens para um servidor central, que distribui o processamento dessas imagens para vários computadores (workers). Cada worker aplica filtros ou transformações nas imagens de forma paralela (usando threads) e devolve o resultado ao servidor. O cliente pode então baixar as imagens já processadas.
 
 ## Como utilizar do sistema?
 
@@ -19,7 +19,7 @@ pip install Flask requests Pillow
 
 * Na mesma pasta, adicione uma imagem e nomeie-a de "sample_image" (no código tá .jpg, se for outro formato: trocar)
 
-* Abra três terminais:
+* Abra quatro terminais:
   
 -> No Terminal 1 (Worker 1): Inicie a primeira instância do worker na porta 5001.
 
@@ -39,10 +39,10 @@ python worker.py 5002
 python server.py
 ```
 
--> Finalmente, no Terminal 3: Execute o cliente para iniciar o processo.
+-> Finalmente, no Terminal 4: Execute o cliente para iniciar o processo.
 
 ```
-python client.py
+python client_paralelo.py
 ```
 
 ## Tecnologias Usadas
