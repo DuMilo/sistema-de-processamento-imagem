@@ -2,6 +2,8 @@
 
 #### Um sistema onde o cliente envia imagens para um servidor central, que distribui o processamento dessas imagens para vários computadores (workers). Cada worker aplica filtros ou transformações nas imagens de forma paralela (usando threads) e devolve o resultado ao servidor. O cliente pode então baixar as imagens já processadas.
 
+#### A imagem transformada pode ser utilizada para projetos de Visão Computacional, onde requer que imagens tenham a menor quantidade de "ruídos" possíveis para serem facilmente processadas pelo computador.
+
 ## Como utilizar do sistema?
 
 * Copie o link do repositório e clone numa pasta do máquina local.
