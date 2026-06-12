@@ -23,25 +23,25 @@ pip install Flask requests Pillow
 
 * Abra quatro terminais:
   
--> No Terminal 1 (Worker 1): Inicie a primeira instância do worker na porta 5001.
+ No Terminal 1 (Worker 1): Inicie a primeira instância do worker na porta 5001.
 
 ```
 python worker.py 5001
 ```
 
--> No Terminal 2 (Worker 2): Inicie a segunda instância do worker em outra porta, 5002.
+ No Terminal 2 (Worker 2): Inicie a segunda instância do worker em outra porta, 5002.
 
 ```
 python worker.py 5002
 ```
 
--> No Terminal 3 (Servidor): Inicie o servidor central.
+ No Terminal 3 (Servidor): Inicie o servidor central.
 
 ```
 python server.py
 ```
 
--> Finalmente, no Terminal 4: Execute o cliente para iniciar o processo.
+ Finalmente, no Terminal 4: Execute o cliente para iniciar o processo.
 
 ```
 python client_paralelo.py
